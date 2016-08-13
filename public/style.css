@@ -1,0 +1,50 @@
+/*https://www.google.com/fonts to reference font styles */
+
+
+html {
+  height: 100%;
+  @import url(https://fonts.googleapis.com/css?family=Roboto|Average+Sans|Shadows+Into+Light);
+}
+
+body {
+  height:  100%;
+  background-image: url("img/light-bg1.png");
+  text-align: center;
+  font-family: "Average Sans", sans-serif;
+  font-size: 15px; /*em will reflect to multiplier*/
+  /* color:  red; */
+}
+
+h1 {
+  font-size: 2.5em;
+  color: gray;
+}
+
+
+.title {
+  font-size: 5em;
+  color: blue;
+}
+
+.button {
+  font-size: inherit; /*will inherit the parent, or what is defined in the <body> */
+  width:  50%;
+  color:  white;
+  background-color:  purple;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2em; /*em is a unit of measure, refers to the width of the letter m, 1em = value of the default font-size applied by the browser */
+  padding: 0.25em 0.5em; /*top, right, bottom, left - clockwise */
+  text-decoration: none; /* removes the hyperlink underline */
+  margin-bottom: 0.25em;
+  display: inline-block;  /* must declare that this block is an inline element, as hyperlinks are by defined as inline; therefore it must be declared as a block to allow the browser to render this class as a block element, which will take up the width of the page */
+}
+
+.guess {
+  font-size: 2em;
+  display: block;
+  margin: 0 auto 0.5em; /*top and bottom, no margin; center alignment */
+}
+
+.trophy {
+  height: 10em;
+}

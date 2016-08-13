@@ -51,7 +51,7 @@ end
 [:get, :post].each do |verb|
   send verb, '/play' do
     session['guessed_number'] = params['guessed_number'].to_i if params['guessed_number']
-
+#   erb :win
     if guessed_correctly?
       erb :win
     else
